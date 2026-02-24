@@ -2,7 +2,7 @@
 
 Live Site: [carlux-phi.vercel.app](https://carlux-phi.vercel.app/)
 
-A modern e-commerce web application for sneakers built with **Next.js**, **Tailwind CSS**, **TypeScript**, and **shadcn/ui**. Users can browse, filter, responsive interface.
+A responsive vehicle inventory dashboard built with Next.js and Tailwind CSS, featuring real-time search, price sorting, and optimized component architecture.
 
 ---
 ## Features
