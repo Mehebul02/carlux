@@ -1,60 +1,43 @@
 # Carlux Inventory Grid
 
-A premium, high-performance inventory dashboard built with Next.js and Tailwind CSS.
+Live Site: [carlux-phi.vercel.app](https://carlux-phi.vercel.app/)
 
-This project was developed as part of a technical assessment to demonstrate frontend architecture, performance optimization, and clean UI execution under deadline constraints.
-
----
-
-## 🚀 Live Demo
-
-🔗 Live URL: https://your-vercel-link.vercel.app  
-🔗 GitHub Repository: https://github.com/your-username/carlux-dashboard
+A modern e-commerce web application for sneakers built with **Next.js**, **Tailwind CSS**, **TypeScript**, and **shadcn/ui**. Users can browse, filter, responsive interface.
 
 ---
-
-## 🧠 Project Overview
-
-Carlux Inventory Grid is a responsive, dark-themed inventory dashboard that fetches vehicle data from a public API and provides real-time search and sorting functionality.
-
-The goal was to build a clean, scalable frontend architecture while maintaining performance and premium UI standards.
-
----
-
-## 🛠 Tech Stack
-
-- **Framework:** Next.js (App Router)
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS
-- **State Management:** React Hooks
-- **Data Source:** DummyJSON API
-
----
-
-## ✨ Core Features
-
-### ✅ Data Grid
+## Features
+- Next.js & TypeScript for fast, scalable, and type-safe web development.
+- Tailwind CSS for responsive and modern UI design.
 - Fetches vehicle data from API
 - Displays image, title, brand, and price
 - Fully responsive layout
-
-### ✅ Real-Time Search
-- Filters products dynamically by title
-- Instant UI updates while typing
-
-### ✅ Sorting Functionality
-- Price: Low to High
-- Price: High to Low
-
-### ✅ Loading State
-- Graceful loading indicator while fetching data
-
-### ✅ Error Handling
-- User-friendly error message if API fails
-
-### ✅ Empty State Handling
-- Displays "No Vehicles Found" when search returns no results
+- Real-Time Search
+- Sorting Functionality
+- Loading State
+- Error Handling
+- Empty State Handling
+- Performance Considerations
 
 ---
 
-## 📂 Project Structure
+##  Tech Stack
+
+- **Framework:** Next.js  (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Icons:** Lucide React
+- **Deployment:** Vercel
+- **Data Source:** DummyJSON API
+---
+# Clone the repository
+Git clone https://github.com/Mehebul02/carlux
+
+# Navigate into the project
+cd kicks
+
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
+
