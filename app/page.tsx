@@ -8,6 +8,7 @@ import SearchBar from "@/components/SearchBar"
 import SortDropdown from "@/components/SortDropdown"
 import Loader from "@/components/Loader"
 import ErrorState from "@/components/ErrorState"
+import { Ban } from "lucide-react"
 
 export default function Home() {
   const [products, setProducts] = useState<Product[]>([])
@@ -64,12 +65,12 @@ export default function Home() {
       <>
         {filteredProducts.length === 0 ? (
           <div className="flex flex-col items-center justify-center py-24 text-zinc-500">
-            <div className="text-5xl mb-4">🚫</div>
+            <div className="text-5xl mb-4"><Ban className="text-red-500"/></div>
             <h2 className="text-2xl font-semibold">
               No Vehicles Found
             </h2>
             <p className="mt-2 text-sm">
-              No results found for "{search}"
+              No results found for &quot;{search}&quot;
             </p>
           </div>
         ) : (
