@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Carlux Inventory Grid
 
-## Getting Started
+A premium, high-performance inventory dashboard built with Next.js and Tailwind CSS.
 
-First, run the development server:
+This project was developed as part of a technical assessment to demonstrate frontend architecture, performance optimization, and clean UI execution under deadline constraints.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Live Demo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🔗 Live URL: https://your-vercel-link.vercel.app  
+🔗 GitHub Repository: https://github.com/your-username/carlux-dashboard
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🧠 Project Overview
 
-To learn more about Next.js, take a look at the following resources:
+Carlux Inventory Grid is a responsive, dark-themed inventory dashboard that fetches vehicle data from a public API and provides real-time search and sorting functionality.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The goal was to build a clean, scalable frontend architecture while maintaining performance and premium UI standards.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🛠 Tech Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **State Management:** React Hooks
+- **Data Source:** DummyJSON API
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## ✨ Core Features
+
+### ✅ Data Grid
+- Fetches vehicle data from API
+- Displays image, title, brand, and price
+- Fully responsive layout
+
+### ✅ Real-Time Search
+- Filters products dynamically by title
+- Instant UI updates while typing
+
+### ✅ Sorting Functionality
+- Price: Low to High
+- Price: High to Low
+
+### ✅ Loading State
+- Graceful loading indicator while fetching data
+
+### ✅ Error Handling
+- User-friendly error message if API fails
+
+### ✅ Empty State Handling
+- Displays "No Vehicles Found" when search returns no results
+
+---
+
+## 📂 Project Structure
