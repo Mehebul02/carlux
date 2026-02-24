@@ -47,22 +47,36 @@ export default function Home() {
   return filtered
 }, [products, search, sort])
   return (
-    <main className="min-h-screen bg-black text-white px-6 md:px-20 py-12">
-      <h1 className="text-3xl md:text-4xl font-bold">
-        Carlux Inventory
-      </h1>
+   <main className="min-h-screen bg-black text-white px-6 md:px-20 py-12">
+    <h1 className="text-3xl md:text-4xl font-bold">
+      Carlux Inventory
+    </h1>
 
-      <div className="flex flex-col md:flex-row gap-4 mt-6">
-        <SearchBar value={search} onChange={setSearch} />
-        <SortDropdown value={sort} onChange={setSort} />
-      </div>
+    <div className="flex flex-col md:flex-row gap-4 mt-6">
+      <SearchBar value={search} onChange={setSearch} />
+      <SortDropdown value={sort} onChange={setSort} />
+    </div>
 
-      {loading && <Loader />}
-      {error && <ErrorState message={error} />}
+    {loading && <Loader />}
+    {error && <ErrorState message={error} />}
 
-      {!loading && !error && (
-        <ProductGrid products={filteredProducts} />
-      )}
-    </main>
+    {!loading && !error && (
+      <>
+        {filteredProducts.length === 0 ? (
+          <div className="flex flex-col items-center justify-center py-24 text-zinc-500">
+            <div className="text-5xl mb-4">🚫</div>
+            <h2 className="text-2xl font-semibold">
+              No Vehicles Found
+            </h2>
+            <p className="mt-2 text-sm">
+              No results found for "{search}"
+            </p>
+          </div>
+        ) : (
+          <ProductGrid products={filteredProducts} />
+        )}
+      </>
+    )}
+  </main>
   )
 }
