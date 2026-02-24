@@ -13,10 +13,6 @@ const ProductCard = ({ product }: { product: Product }) => {
                     width={500}
                     height={500}
                 />
-
-                {/* <span className="absolute top-3 right-3 bg-black/70 text-white text-xs px-3 py-1 rounded-full">
-                    <Star /> {product.rating}
-                </span> */}
             </div>
 
             <div className="p-5">
@@ -32,10 +28,6 @@ const ProductCard = ({ product }: { product: Product }) => {
                     <p className="text-xl font-bold text-white">
                         ${product.price.toLocaleString()}
                     </p>
-
-                    {/* <span className="text-xs text-green-400">
-                        {product.stock > 0 ? "In Stock" : "Out of Stock"}
-                    </span> */}
                 </div>
             </div>
         </div>
